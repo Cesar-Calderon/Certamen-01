@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Registrar Reos!</title>
+  </head>
+  <body>
+      <header class="bg-dark text-light text-center pt-3 pb-3 mb-1">
+        <h1>Registrar Reos</h1>
+      </header>
+
+      <main Class="container-fluid">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="card  bg-dark bg-gradient text-light">
+                    <div>
+                        <div class="card-header text-center">
+                            <span>Registrar Reo</span>
+                        </div>
+                        <div class="card-body">
+
+                            <fieldset>
+                                <legend>Ingreso de Reos:</legend>
+                                <div>
+                                    <label for="nombre-txt">Nombre</label>
+                                    <input type="text" placeholder="Ingrese el nombre aquí" id="nombre-txt">
+                                </div>
+                                <div>
+                                    <label for="apellido-txt">Apellido</label>
+                                    <input type="text" placeholder="Ingrese el apellido aquí" id="apellido-txt">
+                                </div>
+                                <div>
+                                    <label for="crimenes-txt">Cantidad de Crimenes</label>
+                                    <input type="number" placeholder="Ingrese una cantidad" id="crimenes-txt">
+                                </div>
+                                <div>
+                                    <label for="detalle-crimenes-txt" class="form-label">Detalle de Crimenes</label>
+                                    <textarea id="detalle-crimenes-txt"></textarea>
+                                </div>
+                                <div>
+                                    <label for="tipo-select" class="form-label">Ciudad</label>
+                                    <select class="form-select" id="tipo-select">
+                                        <option value="1">Viña del Mar</option>
+                                        <option value="2">Quilpué</option>
+                                        <option value="3">Santiago</option>
+                                        <option value="4">Otro que no sea Santiago</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                        <div class="card-footer bg-light">
+                            <div class="row">
+                                <div class="col-6">
+                                    <button type="button" id="registrar-btn" class="btn btn-dark text-light">Registrar Reo</button>
+                                </div>
+                                <div class="col">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+              <div class="col-lg col-md col">
+                <div class="card">
+                    <div class="card-header bg-primary bg-gradient text-light text-center">
+                        <span>Mostrar Reos</span>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Detalle</th>
+                                    <th>Ciudad</th>
+                                    <th>Gravedad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-tabla">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+          </div>
+       
+      </main>
+      <footer>
+          
+      </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
